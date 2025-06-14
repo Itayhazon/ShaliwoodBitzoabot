@@ -1,12 +1,15 @@
-print("=== MAIN.PY LOADED ===")
+print("=== MAIN.PY LOADED 2002===")
 
-# Import necessary libraries
-from telegram import Update
-from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
-import openai
+import logging
 import os
 import tempfile
-import logging
+import openai
+import telegram  # For debugging path
+from telegram import Update
+from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
+
+# Debug path to telegram module
+print(">>> TELEGRAM MODULE LOCATION:", telegram.__file__)
 
 # Load secrets from environment variables
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")  # Your bot's token from BotFather
