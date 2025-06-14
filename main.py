@@ -1,3 +1,5 @@
+print("=== MAIN.PY LOADED ===")
+
 # Import necessary libraries
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
